@@ -28,7 +28,13 @@ app.post("/",function(req,res){
 	 var price= data.last;
 	 console.log(price);
 
-	 res.send("<h1> Current price of "+crypto+" in "+fiat+ " is "+price+"</h1>");
+	 var currentDate=data.display_timestamp;
+
+	 res.write("<p> Current Date is "+currentDate+" </p>");
+
+	 res.write("<h1> Current price of "+crypto+" in "+fiat+ " is "+price+"</h1>");
+
+	 res.send();
  
  });	
 
