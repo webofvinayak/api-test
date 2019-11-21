@@ -1,0 +1,10 @@
+ 1860  ls
+ 1861  gvim index.html
+ 1862  ls
+ 1863  npm init
+ 1864  ls
+ 1865  npm install express body-parser
+ 1866  istory | tail -n 3
+ 1867  history | tail -n 3
+ 1868  history | tail -n 10
+ 1869  history | tail -n 10 > npm_project.txt

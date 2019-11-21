@@ -1,0 +1,40 @@
+ 1856  cd b
+ 1857  cd Bitcoin-ticker/
+ 1858  ls
+ 1859  gvim index.js index.html
+ 1860  ls
+ 1861  gvim index.html
+ 1862  ls
+ 1863  npm init
+ 1864  ls
+ 1865  npm install express body-parser
+ 1866  istory | tail -n 3
+ 1867  history | tail -n 3
+ 1868  history | tail -n 10
+ 1869  history | tail -n 10 > npm_project.txt
+ 1870  ls
+ 1871  gvim index.js 
+ 1872  nodemon index.js 
+ 1873  npm install request
+ 1874  nodemon index.js 
+ 1875  ls
+ 1876  git init
+ 1877  git add .
+ 1878  git commit -m "phase-1"
+ 1879  git log
+ 1880  la
+ 1881  rm- r .git/
+ 1882  rm -r .git/
+ 1883  ls
+ 1884  la
+ 1885  rm -r .git
+ 1886  git rm -r .git
+ 1887  ls
+ 1888  la
+ 1889  rm -rf .git
+ 1890  ls
+ 1891  la
+ 1892  git init
+ 1893  ls
+ 1894  la
+ 1895  history | tail -n 40 >last_40_terminal_command.txt
