@@ -1,6 +1,17 @@
 <!doctype>
 <html>
 <head>
+<style>
+.big{
+font-size:3rem;
+
+}
+
+h1{
+font-size:5rem;
+
+} 
+</style>
 
 	<title> Bitcoin ticker</title>
 </head>
@@ -9,19 +20,19 @@
 		<h1> Bitcoin Ticker</h1>
 	    <form action="/" method="post">
 	    
-	    <select name="crypto">
+	    <select class="big" name="crypto">
                 <option value="BTC">Bitcoin</option>
                 <option value="ETH">Etherium</option>
                 <option value="LTC">litecoin</option>
             </select>
 	   
-	    <select name="fiat">
+	    <select class="big" name="fiat">
                 <option value="USD">Dollor</option>
                 <option value="GBP">Pound</option>
                 <option value="EUR">EURO</option>
             </select> 
 	   
-	    <button type="submit" name="button"> Check</button> 
+	    <button class="big" type="submit" name="button"> Check</button> 
 	    </form>
 	
 	
