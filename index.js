@@ -16,23 +16,38 @@ app.post("/",function(req,res){
 
 	var crypto=req.body.crypto;
 	var fiat=  req.body.fiat;
+	var am=    req.body.amount;
 
-	var baseURL="https://apiv2.bitcoinaverage.com/indices/global/ticker/";
-	var finalURL=baseURL+crypto+fiat;
+	//https://apiv2.bitcoinaverage.com/convert/global?from=BTC&to=INR&amount=1
+
+	var baseURL="https://apiv2.bitcoinaverage.com/convert/global";
+		
+	var options={
+		url:baseURL,
+		method:"GET",
+		qs: {
+			from:crypto,
+			to:fiat,
+			amount:am,
+		
+	             }
+                  }
 
 
- request(finalURL,function(error,response,body){
+ request(options,function(error,response,body){
  //console.log(body);
    
 	 var data=JSON.parse(body);
-	 var price= data.last;
+	 var price= data.price;
 	 console.log(price);
 
-	 var currentDate=data.display_timestamp;
+	 var currentDate=data.time;
 
 	 res.write("<p> Current Date is "+currentDate+" </p>");
 
-	 res.write("<h1> Current price of "+crypto+" in "+fiat+ " is "+price+"</h1>");
+	 res.write("<h1>"+am+ " of "+crypto+" in "+fiat+ " is "+price+"</h1>");
+
+	 res.write("<h1> vinayak Mandrekar from my localhost </h1>")
 
 	 res.send();
  
